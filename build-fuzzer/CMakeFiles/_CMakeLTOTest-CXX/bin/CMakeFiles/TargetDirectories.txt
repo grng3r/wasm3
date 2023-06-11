@@ -1,0 +1,4 @@
+/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir
+/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir
+/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/edit_cache.dir
+/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/rebuild_cache.dir

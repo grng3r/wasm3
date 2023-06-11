@@ -1,0 +1,1043 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:79 (project)"
+    message: |
+      The system is: Linux - 5.15.114-2-MANJARO - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:79 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/3.26.4/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:79 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/3.26.4/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:79 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-1pvZNw"
+      binary: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-1pvZNw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-1pvZNw
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_00a53 && [1/2] /usr/bin/cc   -v -o CMakeFiles/cmTC_00a53.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,objc,obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.1.1 20230429 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_00a53.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_00a53.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_00a53.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccPIzpSU.s
+        GNU C17 (GCC) version 13.1.1 20230429 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 13.1.1 20230429, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        warning: MPFR header version 4.2.0 differs from library version 4.2.0-p7.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include
+         /usr/local/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: f7ab8f6abad0db9962575524ae915978
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_00a53.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_00a53.dir/'
+         as -v --64 -o CMakeFiles/cmTC_00a53.dir/CMakeCCompilerABI.c.o /tmp/ccPIzpSU.s
+        GNU assembler version 2.40.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.40.0
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_00a53.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_00a53.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /usr/bin/cc  -v CMakeFiles/cmTC_00a53.dir/CMakeCCompilerABI.c.o -o cmTC_00a53   && :
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,objc,obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.1.1 20230429 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_00a53' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_00a53.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVEk10R.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_00a53 /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../.. CMakeFiles/cmTC_00a53.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_00a53' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_00a53.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:79 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:79 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-1pvZNw]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/bin/ninja -v cmTC_00a53 && [1/2] /usr/bin/cc   -v -o CMakeFiles/cmTC_00a53.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto objc obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.1.1 20230429 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_00a53.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_00a53.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_00a53.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccPIzpSU.s]
+        ignore line: [GNU C17 (GCC) version 13.1.1 20230429 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.1.1 20230429  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [warning: MPFR header version 4.2.0 differs from library version 4.2.0-p7.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: f7ab8f6abad0db9962575524ae915978]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_00a53.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_00a53.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_00a53.dir/CMakeCCompilerABI.c.o /tmp/ccPIzpSU.s]
+        ignore line: [GNU assembler version 2.40.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.40.0]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_00a53.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_00a53.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /usr/bin/cc  -v CMakeFiles/cmTC_00a53.dir/CMakeCCompilerABI.c.o -o cmTC_00a53   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto objc obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.1.1 20230429 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_00a53' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_00a53.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVEk10R.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_00a53 /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../.. CMakeFiles/cmTC_00a53.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccVEk10R.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_00a53] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../..]
+          arg [CMakeFiles/cmTC_00a53.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:79 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-MUTkB0"
+      binary: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-MUTkB0"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-MUTkB0
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_75dc2 && [1/2] /usr/bin/c++   -v -o CMakeFiles/cmTC_75dc2.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,objc,obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.1.1 20230429 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_75dc2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_75dc2.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_75dc2.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccjyhxTd.s
+        GNU C++17 (GCC) version 13.1.1 20230429 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 13.1.1 20230429, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        warning: MPFR header version 4.2.0 differs from library version 4.2.0-p7.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../include/c++/13.1.1
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../include/c++/13.1.1/x86_64-pc-linux-gnu
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../include/c++/13.1.1/backward
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include
+         /usr/local/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: e149eaca55f4ee2a0171ba2b54b0dc8d
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_75dc2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_75dc2.dir/'
+         as -v --64 -o CMakeFiles/cmTC_75dc2.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccjyhxTd.s
+        GNU assembler version 2.40.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.40.0
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_75dc2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_75dc2.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /usr/bin/c++  -v CMakeFiles/cmTC_75dc2.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_75dc2   && :
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,objc,obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.1.1 20230429 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_75dc2' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_75dc2.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqlZ3Fn.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_75dc2 /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../.. CMakeFiles/cmTC_75dc2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_75dc2' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_75dc2.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:79 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../include/c++/13.1.1]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../include/c++/13.1.1/x86_64-pc-linux-gnu]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../include/c++/13.1.1/backward]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../include/c++/13.1.1] ==> [/usr/include/c++/13.1.1]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../include/c++/13.1.1/x86_64-pc-linux-gnu] ==> [/usr/include/c++/13.1.1/x86_64-pc-linux-gnu]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../include/c++/13.1.1/backward] ==> [/usr/include/c++/13.1.1/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/13.1.1;/usr/include/c++/13.1.1/x86_64-pc-linux-gnu;/usr/include/c++/13.1.1/backward;/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:79 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-MUTkB0]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/bin/ninja -v cmTC_75dc2 && [1/2] /usr/bin/c++   -v -o CMakeFiles/cmTC_75dc2.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto objc obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.1.1 20230429 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_75dc2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_75dc2.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_75dc2.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccjyhxTd.s]
+        ignore line: [GNU C++17 (GCC) version 13.1.1 20230429 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.1.1 20230429  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [warning: MPFR header version 4.2.0 differs from library version 4.2.0-p7.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../include/c++/13.1.1]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../include/c++/13.1.1/x86_64-pc-linux-gnu]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../include/c++/13.1.1/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: e149eaca55f4ee2a0171ba2b54b0dc8d]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_75dc2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_75dc2.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_75dc2.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccjyhxTd.s]
+        ignore line: [GNU assembler version 2.40.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.40.0]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_75dc2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_75dc2.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /usr/bin/c++  -v CMakeFiles/cmTC_75dc2.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_75dc2   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto objc obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.1.1 20230429 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_75dc2' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_75dc2.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqlZ3Fn.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_75dc2 /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../.. CMakeFiles/cmTC_75dc2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccqlZ3Fn.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_75dc2] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../..]
+          arg [CMakeFiles/cmTC_75dc2.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build-fuzzer/_deps/libuv-src/CMakeLists.txt:39 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_W4"
+    directories:
+      source: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-2ZgHrE"
+      binary: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-2ZgHrE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/_deps/libuv-src/cmake"
+    buildResult:
+      variable: "UV_LINT_W4"
+      cached: true
+      stdout: |
+        Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-2ZgHrE
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_c9f95 && [1/2] /usr/bin/cc -DUV_LINT_W4  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /W4 -o CMakeFiles/cmTC_c9f95.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-2ZgHrE/src.c
+        FAILED: CMakeFiles/cmTC_c9f95.dir/src.c.o 
+        /usr/bin/cc -DUV_LINT_W4  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /W4 -o CMakeFiles/cmTC_c9f95.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-2ZgHrE/src.c
+        cc: warning: /W4: linker input file unused because linking not done
+        cc: error: /W4: linker input file not found: No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build-fuzzer/_deps/libuv-src/CMakeLists.txt:40 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_UNUSED_PARAMETER_MSVC"
+    directories:
+      source: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-LppWUH"
+      binary: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-LppWUH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/_deps/libuv-src/cmake"
+    buildResult:
+      variable: "UV_LINT_NO_UNUSED_PARAMETER_MSVC"
+      cached: true
+      stdout: |
+        Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-LppWUH
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_417ce && [1/2] /usr/bin/cc -DUV_LINT_NO_UNUSED_PARAMETER_MSVC  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /wd4100 -o CMakeFiles/cmTC_417ce.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-LppWUH/src.c
+        FAILED: CMakeFiles/cmTC_417ce.dir/src.c.o 
+        /usr/bin/cc -DUV_LINT_NO_UNUSED_PARAMETER_MSVC  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /wd4100 -o CMakeFiles/cmTC_417ce.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-LppWUH/src.c
+        cc: warning: /wd4100: linker input file unused because linking not done
+        cc: error: /wd4100: linker input file not found: No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build-fuzzer/_deps/libuv-src/CMakeLists.txt:41 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_CONDITIONAL_CONSTANT_MSVC"
+    directories:
+      source: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-59vyU5"
+      binary: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-59vyU5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/_deps/libuv-src/cmake"
+    buildResult:
+      variable: "UV_LINT_NO_CONDITIONAL_CONSTANT_MSVC"
+      cached: true
+      stdout: |
+        Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-59vyU5
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_38346 && [1/2] /usr/bin/cc -DUV_LINT_NO_CONDITIONAL_CONSTANT_MSVC  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /wd4127 -o CMakeFiles/cmTC_38346.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-59vyU5/src.c
+        FAILED: CMakeFiles/cmTC_38346.dir/src.c.o 
+        /usr/bin/cc -DUV_LINT_NO_CONDITIONAL_CONSTANT_MSVC  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /wd4127 -o CMakeFiles/cmTC_38346.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-59vyU5/src.c
+        cc: warning: /wd4127: linker input file unused because linking not done
+        cc: error: /wd4127: linker input file not found: No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build-fuzzer/_deps/libuv-src/CMakeLists.txt:42 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_NONSTANDARD_MSVC"
+    directories:
+      source: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-h64Fbt"
+      binary: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-h64Fbt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/_deps/libuv-src/cmake"
+    buildResult:
+      variable: "UV_LINT_NO_NONSTANDARD_MSVC"
+      cached: true
+      stdout: |
+        Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-h64Fbt
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_55cca && [1/2] /usr/bin/cc -DUV_LINT_NO_NONSTANDARD_MSVC  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /wd4201 -o CMakeFiles/cmTC_55cca.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-h64Fbt/src.c
+        FAILED: CMakeFiles/cmTC_55cca.dir/src.c.o 
+        /usr/bin/cc -DUV_LINT_NO_NONSTANDARD_MSVC  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /wd4201 -o CMakeFiles/cmTC_55cca.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-h64Fbt/src.c
+        cc: warning: /wd4201: linker input file unused because linking not done
+        cc: error: /wd4201: linker input file not found: No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build-fuzzer/_deps/libuv-src/CMakeLists.txt:43 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_NONSTANDARD_EMPTY_TU_MSVC"
+    directories:
+      source: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-0oPADA"
+      binary: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-0oPADA"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/_deps/libuv-src/cmake"
+    buildResult:
+      variable: "UV_LINT_NO_NONSTANDARD_EMPTY_TU_MSVC"
+      cached: true
+      stdout: |
+        Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-0oPADA
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_3d7a0 && [1/2] /usr/bin/cc -DUV_LINT_NO_NONSTANDARD_EMPTY_TU_MSVC  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /wd4206 -o CMakeFiles/cmTC_3d7a0.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-0oPADA/src.c
+        FAILED: CMakeFiles/cmTC_3d7a0.dir/src.c.o 
+        /usr/bin/cc -DUV_LINT_NO_NONSTANDARD_EMPTY_TU_MSVC  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /wd4206 -o CMakeFiles/cmTC_3d7a0.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-0oPADA/src.c
+        cc: warning: /wd4206: linker input file unused because linking not done
+        cc: error: /wd4206: linker input file not found: No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build-fuzzer/_deps/libuv-src/CMakeLists.txt:44 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_NONSTANDARD_FILE_SCOPE_MSVC"
+    directories:
+      source: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-VDAulh"
+      binary: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-VDAulh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/_deps/libuv-src/cmake"
+    buildResult:
+      variable: "UV_LINT_NO_NONSTANDARD_FILE_SCOPE_MSVC"
+      cached: true
+      stdout: |
+        Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-VDAulh
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_a5927 && [1/2] /usr/bin/cc -DUV_LINT_NO_NONSTANDARD_FILE_SCOPE_MSVC  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /wd4210 -o CMakeFiles/cmTC_a5927.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-VDAulh/src.c
+        FAILED: CMakeFiles/cmTC_a5927.dir/src.c.o 
+        /usr/bin/cc -DUV_LINT_NO_NONSTANDARD_FILE_SCOPE_MSVC  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /wd4210 -o CMakeFiles/cmTC_a5927.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-VDAulh/src.c
+        cc: warning: /wd4210: linker input file unused because linking not done
+        cc: error: /wd4210: linker input file not found: No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build-fuzzer/_deps/libuv-src/CMakeLists.txt:45 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_NONSTANDARD_NONSTATIC_DLIMPORT_MSVC"
+    directories:
+      source: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-da0QFF"
+      binary: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-da0QFF"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/_deps/libuv-src/cmake"
+    buildResult:
+      variable: "UV_LINT_NO_NONSTANDARD_NONSTATIC_DLIMPORT_MSVC"
+      cached: true
+      stdout: |
+        Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-da0QFF
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_cf868 && [1/2] /usr/bin/cc -DUV_LINT_NO_NONSTANDARD_NONSTATIC_DLIMPORT_MSVC  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /wd4232 -o CMakeFiles/cmTC_cf868.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-da0QFF/src.c
+        FAILED: CMakeFiles/cmTC_cf868.dir/src.c.o 
+        /usr/bin/cc -DUV_LINT_NO_NONSTANDARD_NONSTATIC_DLIMPORT_MSVC  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /wd4232 -o CMakeFiles/cmTC_cf868.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-da0QFF/src.c
+        cc: warning: /wd4232: linker input file unused because linking not done
+        cc: error: /wd4232: linker input file not found: No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build-fuzzer/_deps/libuv-src/CMakeLists.txt:46 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_HIDES_LOCAL"
+    directories:
+      source: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-hrFsIP"
+      binary: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-hrFsIP"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/_deps/libuv-src/cmake"
+    buildResult:
+      variable: "UV_LINT_NO_HIDES_LOCAL"
+      cached: true
+      stdout: |
+        Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-hrFsIP
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_abad0 && [1/2] /usr/bin/cc -DUV_LINT_NO_HIDES_LOCAL  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /wd4456 -o CMakeFiles/cmTC_abad0.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-hrFsIP/src.c
+        FAILED: CMakeFiles/cmTC_abad0.dir/src.c.o 
+        /usr/bin/cc -DUV_LINT_NO_HIDES_LOCAL  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /wd4456 -o CMakeFiles/cmTC_abad0.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-hrFsIP/src.c
+        cc: warning: /wd4456: linker input file unused because linking not done
+        cc: error: /wd4456: linker input file not found: No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build-fuzzer/_deps/libuv-src/CMakeLists.txt:47 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_HIDES_PARAM"
+    directories:
+      source: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-IsK0TA"
+      binary: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-IsK0TA"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/_deps/libuv-src/cmake"
+    buildResult:
+      variable: "UV_LINT_NO_HIDES_PARAM"
+      cached: true
+      stdout: |
+        Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-IsK0TA
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_1f02e && [1/2] /usr/bin/cc -DUV_LINT_NO_HIDES_PARAM  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /wd4457 -o CMakeFiles/cmTC_1f02e.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-IsK0TA/src.c
+        FAILED: CMakeFiles/cmTC_1f02e.dir/src.c.o 
+        /usr/bin/cc -DUV_LINT_NO_HIDES_PARAM  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /wd4457 -o CMakeFiles/cmTC_1f02e.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-IsK0TA/src.c
+        cc: warning: /wd4457: linker input file unused because linking not done
+        cc: error: /wd4457: linker input file not found: No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build-fuzzer/_deps/libuv-src/CMakeLists.txt:48 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_HIDES_GLOBAL"
+    directories:
+      source: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-udMfhS"
+      binary: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-udMfhS"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/_deps/libuv-src/cmake"
+    buildResult:
+      variable: "UV_LINT_NO_HIDES_GLOBAL"
+      cached: true
+      stdout: |
+        Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-udMfhS
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_3c8a7 && [1/2] /usr/bin/cc -DUV_LINT_NO_HIDES_GLOBAL  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /wd4459 -o CMakeFiles/cmTC_3c8a7.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-udMfhS/src.c
+        FAILED: CMakeFiles/cmTC_3c8a7.dir/src.c.o 
+        /usr/bin/cc -DUV_LINT_NO_HIDES_GLOBAL  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /wd4459 -o CMakeFiles/cmTC_3c8a7.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-udMfhS/src.c
+        cc: warning: /wd4459: linker input file unused because linking not done
+        cc: error: /wd4459: linker input file not found: No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build-fuzzer/_deps/libuv-src/CMakeLists.txt:49 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_CONDITIONAL_ASSIGNMENT_MSVC"
+    directories:
+      source: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-u7myjf"
+      binary: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-u7myjf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/_deps/libuv-src/cmake"
+    buildResult:
+      variable: "UV_LINT_NO_CONDITIONAL_ASSIGNMENT_MSVC"
+      cached: true
+      stdout: |
+        Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-u7myjf
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_afb8b && [1/2] /usr/bin/cc -DUV_LINT_NO_CONDITIONAL_ASSIGNMENT_MSVC  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /wd4706 -o CMakeFiles/cmTC_afb8b.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-u7myjf/src.c
+        FAILED: CMakeFiles/cmTC_afb8b.dir/src.c.o 
+        /usr/bin/cc -DUV_LINT_NO_CONDITIONAL_ASSIGNMENT_MSVC  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /wd4706 -o CMakeFiles/cmTC_afb8b.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-u7myjf/src.c
+        cc: warning: /wd4706: linker input file unused because linking not done
+        cc: error: /wd4706: linker input file not found: No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build-fuzzer/_deps/libuv-src/CMakeLists.txt:50 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_UNSAFE_MSVC"
+    directories:
+      source: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-7GsZBE"
+      binary: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-7GsZBE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/_deps/libuv-src/cmake"
+    buildResult:
+      variable: "UV_LINT_NO_UNSAFE_MSVC"
+      cached: true
+      stdout: |
+        Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-7GsZBE
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_c5c76 && [1/2] /usr/bin/cc -DUV_LINT_NO_UNSAFE_MSVC  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /wd4996 -o CMakeFiles/cmTC_c5c76.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-7GsZBE/src.c
+        FAILED: CMakeFiles/cmTC_c5c76.dir/src.c.o 
+        /usr/bin/cc -DUV_LINT_NO_UNSAFE_MSVC  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /wd4996 -o CMakeFiles/cmTC_c5c76.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-7GsZBE/src.c
+        cc: warning: /wd4996: linker input file unused because linking not done
+        cc: error: /wd4996: linker input file not found: No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build-fuzzer/_deps/libuv-src/CMakeLists.txt:52 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_WALL"
+    directories:
+      source: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-MyUg1l"
+      binary: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-MyUg1l"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/_deps/libuv-src/cmake"
+    buildResult:
+      variable: "UV_LINT_WALL"
+      cached: true
+      stdout: |
+        Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-MyUg1l
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_f642c && [1/2] /usr/bin/cc -DUV_LINT_WALL  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    -Wall -o CMakeFiles/cmTC_f642c.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-MyUg1l/src.c
+        [2/2] : && /usr/bin/cc -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init  CMakeFiles/cmTC_f642c.dir/src.c.o -o cmTC_f642c   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build-fuzzer/_deps/libuv-src/CMakeLists.txt:55 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_NO_UNUSED_PARAMETER"
+    directories:
+      source: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-s3xPGG"
+      binary: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-s3xPGG"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/_deps/libuv-src/cmake"
+    buildResult:
+      variable: "UV_LINT_NO_UNUSED_PARAMETER"
+      cached: true
+      stdout: |
+        Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-s3xPGG
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_9b6de && [1/2] /usr/bin/cc -DUV_LINT_NO_UNUSED_PARAMETER  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    -Wno-unused-parameter -o CMakeFiles/cmTC_9b6de.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-s3xPGG/src.c
+        [2/2] : && /usr/bin/cc -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init  CMakeFiles/cmTC_9b6de.dir/src.c.o -o cmTC_9b6de   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build-fuzzer/_deps/libuv-src/CMakeLists.txt:56 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_STRICT_PROTOTYPES"
+    directories:
+      source: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-dYlo4B"
+      binary: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-dYlo4B"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/_deps/libuv-src/cmake"
+    buildResult:
+      variable: "UV_LINT_STRICT_PROTOTYPES"
+      cached: true
+      stdout: |
+        Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-dYlo4B
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_9fb98 && [1/2] /usr/bin/cc -DUV_LINT_STRICT_PROTOTYPES  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    -Wstrict-prototypes -o CMakeFiles/cmTC_9fb98.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-dYlo4B/src.c
+        [2/2] : && /usr/bin/cc -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init  CMakeFiles/cmTC_9fb98.dir/src.c.o -o cmTC_9fb98   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build-fuzzer/_deps/libuv-src/CMakeLists.txt:57 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_EXTRA"
+    directories:
+      source: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-hXcroK"
+      binary: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-hXcroK"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/_deps/libuv-src/cmake"
+    buildResult:
+      variable: "UV_LINT_EXTRA"
+      cached: true
+      stdout: |
+        Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-hXcroK
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_da961 && [1/2] /usr/bin/cc -DUV_LINT_EXTRA  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    -Wextra -o CMakeFiles/cmTC_da961.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-hXcroK/src.c
+        [2/2] : && /usr/bin/cc -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init  CMakeFiles/cmTC_da961.dir/src.c.o -o cmTC_da961   && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "build-fuzzer/_deps/libuv-src/CMakeLists.txt:59 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test UV_LINT_UTF8_MSVC"
+    directories:
+      source: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-QMW3H0"
+      binary: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-QMW3H0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/_deps/libuv-src/cmake"
+    buildResult:
+      variable: "UV_LINT_UTF8_MSVC"
+      cached: true
+      stdout: |
+        Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-QMW3H0
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_e7c77 && [1/2] /usr/bin/cc -DUV_LINT_UTF8_MSVC  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /utf-8 -o CMakeFiles/cmTC_e7c77.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-QMW3H0/src.c
+        FAILED: CMakeFiles/cmTC_e7c77.dir/src.c.o 
+        /usr/bin/cc -DUV_LINT_UTF8_MSVC  -Dd_m3HasTracer -Wall -Wextra -Wparentheses -Wundef -Wpointer-arith -Wstrict-aliasing=2 -Werror=implicit-function-declaration -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-missing-field-initializers -Wjump-misses-init    /utf-8 -o CMakeFiles/cmTC_e7c77.dir/src.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/CMakeScratch/TryCompile-QMW3H0/src.c
+        cc: warning: /utf-8: linker input file unused because linking not done
+        cc: error: /utf-8: linker input file not found: No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "CMakeLists.txt:208 (check_ipo_supported)"
+    directories:
+      source: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-CXX/bin
+        
+        Run Build Command(s):/usr/bin/ninja -v && [1/4] /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [2/4] /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [3/4] : && /usr/bin/cmake -E rm -f libfoo.a && "/usr/bin/gcc-ar" cr libfoo.a  CMakeFiles/foo.dir/foo.cpp.o && "/usr/bin/gcc-ranlib" libfoo.a && :
+        [4/4] : && /usr/bin/c++ -flto=auto -fno-fat-lto-objects  CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "CMakeLists.txt:208 (check_ipo_supported)"
+    directories:
+      source: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-C/src"
+      binary: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-C/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-C/bin
+        
+        Run Build Command(s):/usr/bin/ninja -v && [1/4] /usr/bin/cc   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+        [2/4] /usr/bin/cc   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-C/src/main.c
+        [3/4] : && /usr/bin/cmake -E rm -f libfoo.a && "/usr/bin/gcc-ar" cr libfoo.a  CMakeFiles/foo.dir/foo.c.o && "/usr/bin/gcc-ranlib" libfoo.a && :
+        [4/4] : && /usr/bin/cc -flto=auto -fno-fat-lto-objects  CMakeFiles/boo.dir/main.c.o -o boo  libfoo.a && :
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "CMakeLists.txt:208 (check_ipo_supported)"
+    directories:
+      source: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-CXX/bin
+        
+        Run Build Command(s):/usr/bin/ninja -v && [1/4] /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [2/4] /usr/bin/c++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [3/4] : && /usr/bin/cmake -E rm -f libfoo.a && "/usr/bin/gcc-ar" cr libfoo.a  CMakeFiles/foo.dir/foo.cpp.o && "/usr/bin/gcc-ranlib" libfoo.a && :
+        [4/4] : && /usr/bin/c++ -flto=auto -fno-fat-lto-objects  CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "CMakeLists.txt:208 (check_ipo_supported)"
+    directories:
+      source: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-C/src"
+      binary: "/home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-C/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-C/bin
+        
+        Run Build Command(s):/usr/bin/ninja -v && [1/4] /usr/bin/cc   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-C/src/main.c
+        [2/4] /usr/bin/cc   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.c.o -c /home/grng3r/Desktop/projects/upm_diplomski/wasm3/build-fuzzer/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+        [3/4] : && /usr/bin/cmake -E rm -f libfoo.a && "/usr/bin/gcc-ar" cr libfoo.a  CMakeFiles/foo.dir/foo.c.o && "/usr/bin/gcc-ranlib" libfoo.a && :
+        [4/4] : && /usr/bin/cc -flto=auto -fno-fat-lto-objects  CMakeFiles/boo.dir/main.c.o -o boo  libfoo.a && :
+        
+      exitCode: 0
+...
